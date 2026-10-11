@@ -11,7 +11,7 @@ env:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: [self-hosted, linux, x64, projects-server, build]
     strategy:
       fail-fast: false # report all go versions separately
       matrix:
